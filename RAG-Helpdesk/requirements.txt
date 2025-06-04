@@ -1,0 +1,6 @@
+Flask>=2.0
+weaviate-client>=4.0
+python-dotenv
+# Add other specific dependencies from your weaviate_client.py if they are used in the webapp context
+# e.g., langchain, numpy, if vector generation or advanced processing happens in the webapp
+# For now, keeping it minimal for the web server itself. 

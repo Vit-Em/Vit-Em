@@ -1,0 +1,28 @@
+[Unit]
+Description=Flight Deal Club Memory API Service (Weaviate Local)
+After=network.target docker.service # Ensure Docker is running before this service
+Requires=docker.service # This service depends on Docker
+
+[Service]
+User=oem
+# Group=oem  # Removed to fix group credentials error
+WorkingDirectory=/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate
+
+# Ensure the .env file is loaded if your API relies on it for FDC_API_KEY or FDC_API_PORT
+# EnvironmentFile=/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate/.env
+
+ExecStart=/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate/.venv/bin/gunicorn --workers 3 --bind 0.0.0.0:5000 fdc-memory-api:app
+
+Restart=on-failure
+RestartSec=10s
+
+StandardOutput=append:/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate/log-file.txt
+StandardError=append:/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate/log-file.txt
+
+Environment="PYTHONUNBUFFERED=1"
+# Pass environment variables directly if not using EnvironmentFile, or if they are critical for startup
+# Environment="FDC_API_KEY=your_secret_api_key" # Example: Better to use EnvironmentFile or have it in .bashrc/.profile for the 'oem' user
+# Environment="FDC_API_PORT=5000"
+
+[Install]
+WantedBy=multi-user.target 

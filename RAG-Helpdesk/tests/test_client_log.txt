@@ -1,0 +1,41 @@
+[2025-05-31 09:50:14] Starting check_api_connection test
+[2025-05-31 09:50:14] check_api_connection test result: True
+[2025-05-31 09:50:14] Starting check_api_connection_failure test
+[2025-05-31 09:50:14] check_api_connection_failure test result: False
+[2025-05-31 09:50:14] check_api_connection_error test result: False
+[2025-05-31 09:50:14] Starting query_memory_bank test
+[2025-05-31 09:50:14] query_memory_bank test result: 2 results
+[2025-05-31 09:50:14] Starting query_memory_bank_failure test
+[2025-05-31 09:50:14] query_memory_bank_failure test completed
+[2025-05-31 09:50:14] query_memory_bank_error test completed
+[2025-05-31 09:50:14] Starting add_to_memory_bank test
+[2025-05-31 09:50:14] add_to_memory_bank test result: success
+[2025-05-31 09:50:14] Starting add_to_memory_bank_failure test
+[2025-05-31 09:50:14] add_to_memory_bank_failure test completed
+[2025-05-31 09:50:14] add_to_memory_bank_error test completed
+[2025-05-31 09:50:14] Starting add_image_to_memory_bank test
+[2025-05-31 09:50:14] add_image_to_memory_bank test result: success
+[2025-05-31 09:50:14] Starting add_image_nonexistent_file test
+[2025-05-31 09:50:14] add_image_nonexistent_file test completed
+[2025-05-31 09:50:14] Starting add_url_to_memory_bank test
+[2025-05-31 09:50:14] add_url_to_memory_bank test result: success
+[2025-05-31 09:50:14] Starting add_url_invalid_url test
+[2025-05-31 09:50:14] add_url_invalid_url test completed
+[2025-05-31 09:50:14] Starting add_binary_to_memory_bank test
+[2025-05-31 09:50:14] add_binary_to_memory_bank test result: success
+[2025-05-31 09:50:14] Starting add_binary_nonexistent_file test
+[2025-05-31 09:50:14] add_binary_nonexistent_file test completed
+[2025-05-31 09:50:14] Starting update_memory_bank test
+[2025-05-31 09:50:14] update_memory_bank test result: success
+[2025-05-31 09:50:14] Starting update_memory_bank_failure test
+[2025-05-31 09:50:14] update_memory_bank_failure test completed
+[2025-05-31 09:50:14] update_memory_bank_error test completed
+[2025-05-31 09:50:14] Starting delete_from_memory_bank test
+[2025-05-31 09:50:14] delete_from_memory_bank test result: success
+[2025-05-31 09:50:14] Starting delete_from_memory_bank_failure test
+[2025-05-31 09:50:14] delete_from_memory_bank_failure test completed
+[2025-05-31 09:50:14] delete_from_memory_bank_error test completed
+[2025-05-31 09:50:14] Starting main_function_query test
+[2025-05-31 09:50:14] main_function_query test completed
+[2025-05-31 09:50:14] Starting main_function_add_text test
+[2025-05-31 09:50:14] main_function_add_text test completed

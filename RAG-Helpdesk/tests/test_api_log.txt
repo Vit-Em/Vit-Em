@@ -1,0 +1,24 @@
+[2025-05-31 09:50:13] Starting health check test
+[2025-05-31 09:50:14] Health check test result: {'api_version': '1.0.0', 'status': 'healthy', 'weaviate_version': '1.30.4'}
+[2025-05-31 09:50:14] Starting health check test with no connection
+[2025-05-31 09:50:14] Health check test with no connection result: {'message': 'Could not connect to Weaviate', 'status': 'error'}
+[2025-05-31 09:50:14] Starting query memory bank test
+[2025-05-31 09:50:14] Query memory bank test result: 401
+[2025-05-31 09:50:14] Starting query with content type filter test
+[2025-05-31 09:50:14] Query with content type filter test result: 401
+[2025-05-31 09:50:14] Starting add text test
+[2025-05-31 09:50:14] Add text test result: 401
+[2025-05-31 09:50:14] Starting add image test
+[2025-05-31 09:50:14] Add image test result: 401
+[2025-05-31 09:50:14] Starting add URL test
+[2025-05-31 09:50:14] Add URL test result: 401
+[2025-05-31 09:50:14] Starting add binary file test
+[2025-05-31 09:50:14] Add binary file test result: 401
+[2025-05-31 09:50:14] Starting update text test
+[2025-05-31 09:50:14] Update text test result: 401
+[2025-05-31 09:50:14] Starting delete test
+[2025-05-31 09:50:14] Delete test result: 401
+[2025-05-31 09:50:14] Starting auth required test
+[2025-05-31 09:50:14] Auth required test result: 401
+[2025-05-31 09:50:14] Starting create_simple_vector test
+[2025-05-31 09:50:14] Create simple vector test result: 10 dimensions

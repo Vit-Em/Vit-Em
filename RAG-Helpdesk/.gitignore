@@ -1,0 +1,8 @@
+weaviate_data/
+.venv/
+.idea/
+.env
+
+# Python
+__pycache__/
+*.py[cod]

@@ -1,0 +1,846 @@
+(.venv) oem@LinYuk-Thinks:~/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository$ python weaviate-client.py
+ic| f"Looking for Markdown files in: {MARKDOWN_DIRECTORY}": ('Looking for Markdown files in: '
+                                                             '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank')
+ic| client: <weaviate.client.WeaviateClient object at 0x72ac5180e600>
+ic| 'Successfully connected to local Weaviate!'
+ic| f"Weaviate Server Version: {meta.get('version')}": 'Weaviate Server Version: 1.30.4'
+ic| f"Active Modules on Server: {[mod for mod in meta.get('modules', {}).keys()]}": "Active Modules on Server: ['text2vec-huggingface']"
+ic| 'MarkdownChunk collection does not exist. Creating.'
+/home/oem/Dokumente/_Python/100_Days/039/.venv/lib/python3.12/site-packages/weaviate/collections/classes/config.py:1963: PydanticDeprecatedSince211: Accessing the 'model_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+  for cls_field in self.model_fields:
+ic| 'MarkdownChunk collection created successfully.'
+ic| f"Loading documents from: {directory_path}": ('Loading documents from: '
+                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/MemoryBank_Reorganization_Summary.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_MemoryBank_Structure.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/01_CURRENT_STATUS.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_NEXT_ACTIONS.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/0202_TechContext.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/03_Glossary.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/02_TechStack.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/00_INDEX.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/0102_ProductContext.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/0203_MCP_References.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/01_ProjectBrief.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/log-file.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/requirements.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/openail_log-file.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pycparser-2.22.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/numpy/random/LICENSE.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/numpy/_core/tests/data/umath-validation-set-README.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/numpy/_core/include/numpy/random/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/numpy/ma/API_CHANGES.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langchain_core-0.3.63.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/flask/sansio/README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/asttokens-3.0.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/certifi-2025.4.26.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/jsonpatch-1.33.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/flask_cors-6.0.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/requests-2.32.3.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/httpx_sse-0.4.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/httpx-0.28.1.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/httpx-0.28.1.dist-info/licenses/LICENSE.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/frozenlist-1.6.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/flask-3.1.1.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/flask-3.1.1.dist-info/licenses/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/jsonpointer-3.0.0.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/jsonpointer-3.0.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langchain_text_splitters-0.3.8.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/werkzeug-3.1.3.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/python_dotenv-1.1.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/python_dotenv-1.1.0.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/validators-0.34.0.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/validators-0.34.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/idna-3.10.dist-info/LICENSE.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/aiosignal-1.3.2.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/colorama-0.4.6.dist-info/licenses/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/requests_toolbelt-1.0.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pygments-2.19.1.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/sqlalchemy/dialects/type_migration_guidelines.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/cffi-1.17.1.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/cffi-1.17.1.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/validators/_tld.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/numpy-2.2.6.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/numpy-2.2.6.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/grpcio_health_checking-1.71.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langchain_community-0.3.24.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/multidict-6.4.4.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/tenacity-9.1.2.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/grpcio_tools-1.71.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/charset_normalizer-3.4.2.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/charset_normalizer-3.4.2.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langchain/chains/llm_summarization_checker/prompts/are_all_true_prompt.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langchain/chains/llm_summarization_checker/prompts/revise_summary.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langchain/chains/llm_summarization_checker/prompts/check_facts.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langchain/chains/llm_summarization_checker/prompts/create_facts.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langsmith-0.3.43.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/grpcio-1.71.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/MarkupSafe-3.0.2.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/MarkupSafe-3.0.2.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pip/_vendor/vendor.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/typing_inspect-0.9.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pip-24.0.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pip-24.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pip-24.0.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pip-24.0.dist-info/AUTHORS.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/PyYAML-6.0.2.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langchain-0.3.25.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/yarl-1.20.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/Authlib-1.3.1.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/icecream-2.1.4.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/icecream-2.1.4.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/anyio-4.9.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/anyio-4.9.0.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/click-8.2.1.dist-info/licenses/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/executing-2.2.0.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/executing-2.2.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/aiohttp-3.12.4.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/aiohttp-3.12.4.dist-info/licenses/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/werkzeug/debug/shared/ICON_LICENSE.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/sniffio-1.3.1.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/httpcore-1.0.9.dist-info/licenses/LICENSE.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/weaviate_client-4.14.4.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/h11-0.16.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/h11-0.16.0.dist-info/licenses/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/deprecation-2.1.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/greenlet-3.2.2.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/zstandard-0.23.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools-80.9.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools-80.9.0.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/langsmith/cli/README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/jinja2-3.1.6.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/jinja2-3.1.6.dist-info/licenses/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/itsdangerous-2.2.0.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/urllib3-2.4.0.dist-info/licenses/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pkg_resources/api_tests.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/SOURCES.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/pkg_resources/tests/data/my-test-package_unpacked-egg/my_test_package-1.0-py3.7.egg/EGG-INFO/dependency_links.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/sqlalchemy-2.0.41.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/propcache-0.3.1.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/blinker-1.9.0.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/tests/config/setupcfg_examples.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/LICENSE.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/wheel-0.45.1.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco/text/Lorem '
+                                                                  'ipsum.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.context-5.3.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/typeguard-4.3.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/typeguard-4.3.0.dist-info/entry_points.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/inflect-7.3.1.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/zipp-3.19.2.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/wheel/vendored/vendor.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.text-3.12.1.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/_MB_repository/.venv/lib/python3.12/site-packages/setuptools/_vendor/autocommand-2.2.2.dist-info/top_level.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/01_Status/03_NextActions.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/01_Status/02_Progress.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/01_Status/01_ActiveContext.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0403_Database_Structure_RAG.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0401_Application_Reliability.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/03_Security.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0404_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0007_flight_finder_engine_rag.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0402_API_Reference.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0106_Pending_Tasks.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/02_IMPLEMENTATION_GUIDE.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0107_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0206_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0004_MCP_References.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0000_FlightDealClub_MB_structure.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0002_INDEX.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0104_Progress.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/01_CURRENT_STATUS.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0009_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0101_ProjectBrief.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0003_VERSION_HISTORY.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0103_ActiveContext.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0001_GLOSSARY.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/00_CORE_PRINCIPLES.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/03_NEXT_ACTIONS.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/03_Deployment/MIGRATION_GUIDE.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/02_Development/0105_Existing_Assets.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/03_UI_Components/01_Client_Side_Localization.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/01_Integration/0008_FRONTEND_BACKEND_INTEGRATION.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/01_Integration/0006_BACKEND_FRONTEND_INTEGRATION_PLAN.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0304_SPA_Implementation_Guide.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/01_Architecture.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0308_Subscription_Form_Implementation.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0307_Redirect_Implementation.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0302_Frontend_Implementation_Plan.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0306_Localization_Strategy.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0309_Vue_Integration_Strategy.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0310_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0305_Map_Interface.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0303_Flight_Search_Enhanced_Implementation.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0303_SPA_Web_Interface_Development_Plan.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0301_Frontend_Architecture.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0501_Web_Page_Specification.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0504_UI_Issues.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0503_Applied_Design_Rules.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0505_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0502_Mobile_Friendly_Design.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/0205_System_Architecture_Diagram.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/02_DatabaseSchema.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/01_SystemDesign.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/0201_SystemPatterns.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/0204_UML_Diagram.md')
+ic| f"Finished loading. Total documents loaded: {len(documents)}": 'Finished loading. Total documents loaded: 178'
+ic| f"Chunking {len(documents)} documents...": 'Chunking 178 documents...'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 1/178: README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 2/178: MemoryBank_Reorganization_Summary.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 3/178: 00_MemoryBank_Structure.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 4/178: 01_CURRENT_STATUS.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 5/178: 03_NEXT_ACTIONS.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 6/178: 0202_TechContext.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 10 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 7/178: 03_Glossary.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 8/178: 02_TechStack.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 9/178: 00_INDEX.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 10/178: 0102_ProductContext.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 11/178: 0203_MCP_References.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 12/178: 01_ProjectBrief.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 13/178: README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 14/178: log-file.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 164 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 15/178: requirements.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 16/178: openail_log-file.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 87 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 17/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 18/178: LICENSE.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 19/178: umath-validation-set-README.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 20/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 21/178: API_CHANGES.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 22/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 23/178: README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 24/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 25/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 26/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 27/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 28/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 29/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 30/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 31/178: LICENSE.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 32/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 33/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 34/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 35/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 36/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 37/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 38/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 39/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 40/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 41/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 42/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 43/178: LICENSE.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 44/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 45/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 46/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 47/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 48/178: type_migration_guidelines.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 12 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 49/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 50/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 51/178: _tld.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 12 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 52/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 65 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 53/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 54/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 55/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 56/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 57/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 58/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 59/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 60/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 61/178: are_all_true_prompt.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 62/178: revise_summary.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 63/178: check_facts.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 64/178: create_facts.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 65/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 66/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 67/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 68/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 69/178: vendor.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 70/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 71/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 72/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 73/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 74/178: AUTHORS.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 13 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 75/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 76/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 77/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 78/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 79/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 80/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 81/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 82/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 83/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 84/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 85/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 86/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 87/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 88/178: ICON_LICENSE.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 89/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 90/178: LICENSE.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 91/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 92/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 93/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 94/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 95/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 96/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 97/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 98/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 99/178: README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 100/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 101/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 102/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 103/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 104/178: api_tests.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 16 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 105/178: SOURCES.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 106/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 0 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 107/178: dependency_links.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 0 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 108/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 109/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 110/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 111/178: setupcfg_examples.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 3 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 112/178: LICENSE.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 113/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 114/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 115/178: Lorem ipsum.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 116/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 117/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 118/178: entry_points.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 119/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 120/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 121/178: vendor.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 122/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 123/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 124/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 125/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 126/178: top_level.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 127/178: 03_NextActions.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 7 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 128/178: 02_Progress.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 7 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 129/178: 01_ActiveContext.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 130/178: 0403_Database_Structure_RAG.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 23 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 131/178: 0401_Application_Reliability.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 7 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 132/178: 03_Security.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 14 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 133/178: 0404_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 134/178: 0007_flight_finder_engine_rag.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 66 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 135/178: 0402_API_Reference.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 12 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 136/178: 0106_Pending_Tasks.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 137/178: 02_IMPLEMENTATION_GUIDE.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 18 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 138/178: 0107_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 139/178: 0206_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 140/178: 0004_MCP_References.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 9 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 141/178: 0000_FlightDealClub_MB_structure.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 142/178: 0002_INDEX.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 143/178: 0104_Progress.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 37 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 144/178: 01_CURRENT_STATUS.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 145/178: 0009_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 146/178: 0101_ProjectBrief.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 3 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 147/178: 0003_VERSION_HISTORY.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 14 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 148/178: 0103_ActiveContext.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 33 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 149/178: 0001_GLOSSARY.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 150/178: 00_CORE_PRINCIPLES.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 8 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 151/178: 03_NEXT_ACTIONS.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 9 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 152/178: MIGRATION_GUIDE.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 7 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 153/178: 0105_Existing_Assets.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 3 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 154/178: 01_Client_Side_Localization.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 155/178: 0008_FRONTEND_BACKEND_INTEGRATION.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 8 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 156/178: 0006_BACKEND_FRONTEND_INTEGRATION_PLAN.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 12 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 157/178: 0304_SPA_Implementation_Guide.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 16 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 158/178: 01_Architecture.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 159/178: 0308_Subscription_Form_Implementation.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 160/178: 0307_Redirect_Implementation.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 161/178: 0302_Frontend_Implementation_Plan.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 10 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 162/178: 0306_Localization_Strategy.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 163/178: 0309_Vue_Integration_Strategy.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 164/178: 0310_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 165/178: 0305_Map_Interface.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 8 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 166/178: 0303_Flight_Search_Enhanced_Implementation.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 25 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 167/178: 0303_SPA_Web_Interface_Development_Plan.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 168/178: 0301_Frontend_Architecture.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 8 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 169/178: 0501_Web_Page_Specification.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 170/178: 0504_UI_Issues.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 171/178: 0503_Applied_Design_Rules.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 172/178: 0505_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 173/178: 0502_Mobile_Friendly_Design.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 3 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 174/178: 0205_System_Architecture_Diagram.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 16 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 175/178: 02_DatabaseSchema.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 14 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 176/178: 01_SystemDesign.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 10 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 177/178: 0201_SystemPatterns.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 12 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 178/178: 0204_UML_Diagram.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Finished chunking. Total chunks created: {len(chunks)}": 'Finished chunking. Total chunks created: 1139'
+ic| f"Ingesting {len(chunks)} chunks into Weaviate...": 'Ingesting 1139 chunks into Weaviate...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 10 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 20 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 30 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 40 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 50 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 60 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 70 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 80 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 90 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 100 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 110 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 120 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 130 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 140 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 150 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 160 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 170 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 180 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 190 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 200 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 210 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 220 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 230 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 240 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 250 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 260 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 270 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 280 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 290 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 300 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 310 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 320 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 330 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 340 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 350 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 360 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 370 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 380 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 390 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 400 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 410 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 420 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 430 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 440 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 450 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 460 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 470 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 480 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 490 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 500 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 510 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 520 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 530 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 540 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 550 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 560 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 570 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 580 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 590 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 600 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 610 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 620 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 630 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 640 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 650 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 660 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 670 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 680 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 690 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 700 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 710 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 720 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 730 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 740 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 750 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 760 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 770 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 780 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 790 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 800 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 810 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 820 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 830 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 840 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 850 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 860 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 870 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 880 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 890 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 900 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 910 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 920 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 930 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 940 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 950 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 960 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 970 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 980 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 990 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1000 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1010 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1020 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1030 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1040 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1050 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1060 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1070 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1080 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1090 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1100 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1110 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1120 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 1130 chunks to batch...'
+ic| 'Batching complete. All chunks sent to Weaviate.'
+ic| f"Successfully ingested chunks. Collection now has at least {objects_count} objects.": 'Successfully ingested chunks. Collection now has at least 10 objects.'
+ic| 'Connection closed in finally block.'

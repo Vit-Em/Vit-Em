@@ -1,0 +1,14 @@
+[2025-05-31 09:50:14] Starting load_markdown_documents test
+[2025-05-31 09:50:14] load_markdown_documents test result: 3 documents
+[2025-05-31 09:50:14] Starting chunk_documents test
+[2025-05-31 09:50:14] chunk_documents test result: 4 chunks
+[2025-05-31 09:50:14] Starting create_simple_vector test
+[2025-05-31 09:50:14] create_simple_vector test result: 10 dimensions
+[2025-05-31 09:50:14] Starting ingest_chunks test
+[2025-05-31 09:50:14] ingest_chunks test completed
+[2025-05-31 09:50:14] Starting search_documents test
+[2025-05-31 09:50:14] search_documents test result: 1 results
+[2025-05-31 09:50:14] search_documents with filter test result: 1 results
+[2025-05-31 09:50:14] Starting rag_query test
+[2025-05-31 09:50:14] rag_query test completed
+[2025-05-31 09:50:14] Starting schema_creation test

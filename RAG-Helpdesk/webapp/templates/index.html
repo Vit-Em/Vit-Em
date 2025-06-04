@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weaviate Interface</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: #5a5a5a; }
+        .stats, .tools { margin-bottom: 30px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input[type='text'], input[type='file'], textarea, select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button { 
+            background-color: #007bff; color: white; padding: 10px 15px; border: none; 
+            border-radius: 4px; cursor: pointer; margin-top: 15px;
+        }
+        button:hover { background-color: #0056b3; }
+        .error { color: red; font-weight: bold; }
+        .success { color: green; font-weight: bold; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
+        .flash-message {
+            padding: 10px 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .flash-error {
+            background-color: #ffe6e6;
+            border: 1px solid #ffb3b3;
+        }
+        .flash-success {
+            background-color: #e6ffe6;
+            border: 1px solid #b3ffb3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ccc;
+        }
+        td {
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weaviate Interaction Interface</h1>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash-message flash-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <div class="stats">
+            <h2>Database Information/Statistics</h2>
+            {% if stats.error %}
+                <p class="error">Error fetching stats: {{ stats.error }}</p>
+            {% else %}
+                <p>Total objects in 'MarkdownChunk' collection: <strong>{{ stats.get('total_markdown_chunks', 'N/A') }}</strong></p>
+                <!-- More stats can be displayed here -->
+            {% endif %}
+        </div>
+
+        {% if meta or nodes %}
+            <h3>Weaviate System Information</h3>
+            <table style="width:100%; border-collapse: collapse; margin-bottom: 20px;">
+                <tr style="background-color:#f5f5f5">
+                    <th style="border-bottom:1px solid #ccc; text-align:left; padding:8px;">Property</th>
+                    <th style="border-bottom:1px solid #ccc; text-align:left; padding:8px;">Value</th>
+                </tr>
+                {% if meta %}
+                <tr>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">Version</td>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">{{ meta.version }}</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">Hostname</td>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">{{ meta.hostname }}</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">gRPC Max Message Size</td>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">{{ meta.grpcMaxMessageSize | default('N/A') }}</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">Active Modules</td>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">{% if meta.modules|default({})|length > 0 %}{{ meta.modules|tojson }}{% else %}None{% endif %}</td>
+                </tr>
+                {% endif %}
+                
+                {% if nodes and nodes.nodes %}
+                {% set node = nodes.nodes[0] %}
+                <tr>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">Node Name</td>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">{{ node.name }}</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">Status</td>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">{{ node.status }}</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">Git Hash</td>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">{{ node.gitHash }}</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">Batch Queue Length</td>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">{{ node.batchStats.queueLength }}</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">Batch Rate (per second)</td>
+                    <td style="padding:8px; border-bottom:1px solid #eee;">{{ node.batchStats.ratePerSecond }}</td>
+                </tr>
+                {% endif %}
+            </table>
+        {% endif %}
+
+        {% if metrics %}
+            <h3>Weaviate Metrics (first 10 lines)</h3>
+            <pre style="background:#f8f8f8; border:1px solid #ccc; padding:10px; border-radius:4px;">{{ metrics }}</pre>
+        {% endif %}
+
+        {% if no_entries_message %}
+            <div class="error">{{ no_entries_message }}</div>
+        {% endif %}
+
+        {% if entries %}
+            <h3>Sample Entries (up to 20)</h3>
+            <table>
+                <tr>
+                    <th>Filename</th>
+                    <th>UUID</th>
+                    <th>Vector Weight</th>
+                </tr>
+                {% for entry in entries %}
+                <tr>
+                    <td>{{ entry.filename }}</td>
+                    <td style="font-family:monospace;">{{ entry.uuid }}</td>
+                    <td>{% if entry.vector_weight is number %}{{ "%.3f"|format(entry.vector_weight) }}{% else %}{{ entry.vector_weight }}{% endif %}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% endif %}
+
+        <hr>
+
+        <div class="tools">
+            <h2>Add New Entry</h2>
+            <form action="{{ url_for('add_entry') }}" method="POST" enctype="multipart/form-data">
+                <label for="content_type">Content Type:</label>
+                <select name="content_type" id="content_type" onchange="toggle_fields(this.value)">
+                    <option value="text" selected>Text Document</option>
+                    <option value="file">File (Image, Binary, Code Script, JSON, etc.)</option>
+                    <!-- Add more specific types as needed -->
+                </select>
+
+                <div id="text_fields">
+                    <label for="text_content">Text Content:</label>
+                    <textarea name="text_content" id="text_content" rows="5"></textarea>
+                    <!-- Add other metadata fields for text if necessary -->
+                </div>
+
+                <div id="file_fields" style="display: none;">
+                    <label for="file_upload">Upload File:</label>
+                    <input type="file" name="file_upload" id="file_upload">
+                    
+                    <label for="file_actual_type">Specify File Type (e.g., image, binary, code, json):</label>
+                    <input type="text" name="file_actual_type" id="file_actual_type" placeholder="e.g., image, code_script, json">
+                    <!-- Add other metadata fields for files if necessary -->
+                </div>
+                
+                <!-- Common metadata fields -->
+                <label for="filename_add">Filename (optional, will be derived if not set):</label>
+                <input type="text" name="filename_add" id="filename_add">
+
+                <label for="tags_add">Tags (comma-separated, optional):</label>
+                <input type="text" name="tags_add" id="tags_add">
+
+                <button type="submit">Add Entry</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="tools">
+            <h2>Delete Entry</h2>
+            <form action="{{ url_for('delete_entry') }}" method="POST">
+                <label for="entry_id">Entry ID (Weaviate UUID):</label>
+                <input type="text" name="entry_id" id="entry_id" required>
+                <button type="submit">Delete Entry</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function toggle_fields(selectedType) {
+            const textFields = document.getElementById('text_fields');
+            const fileFields = document.getElementById('file_fields');
+            if (selectedType === 'text') {
+                textFields.style.display = 'block';
+                fileFields.style.display = 'none';
+            } else if (selectedType === 'file') {
+                textFields.style.display = 'none';
+                fileFields.style.display = 'block';
+            } else {
+                textFields.style.display = 'none';
+                fileFields.style.display = 'none';
+            }
+        }
+        // Initialize fields based on default selection
+        document.addEventListener("DOMContentLoaded", function() {
+            toggle_fields(document.getElementById('content_type').value);
+        });
+    </script>
+
+</body>
+</html> 

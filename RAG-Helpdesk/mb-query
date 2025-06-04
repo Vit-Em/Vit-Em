@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Path to the Python executable in the virtual environment
+PYTHON_PATH="/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate/.venv/bin/python3"
+
+# Path to the cursor-memory-client.py script
+CLIENT_SCRIPT="/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate/cursor-memory-client.py"
+
+# Check if the first parameter is provided
+if [ $# -eq 0 ]; then
+    echo "Usage: mb-query [command] [arguments]"
+    echo "Examples:"
+    echo "  mb-query health"
+    echo "  mb-query query \"What is the current state of the project?\""
+    echo "  mb-query add --content \"Important info\" --filename \"note.md\" --directory \"docs\" --title \"My Note\""
+    exit 1
+fi
+
+# Execute the cursor-memory-client.py script with all provided arguments
+$PYTHON_PATH $CLIENT_SCRIPT "$@" 

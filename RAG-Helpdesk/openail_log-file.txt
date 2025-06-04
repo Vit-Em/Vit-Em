@@ -1,0 +1,369 @@
+(.venv) oem@LinYuk-Thinks:~/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate$ python weaviate-client.py
+ic| WCS_URL: 'real_url'
+ic| WEAVIATE_API_KEY: 'real_api_key'
+ic| OPENAI_API_KEY: 'real_api_key'
+ic| MARKDOWN_DIRECTORY: 'my_FDC_MemoryBank'
+ic| client: <weaviate.client.WeaviateClient object at 0x7e2851df0a70>
+ic| 'Successfully connected to Weaviate!'
+ic| f"Weaviate Server Version: {meta.get('version')}": 'Weaviate Server Version: 1.30.4'
+ic| f"Active Modules on Server: {[mod for mod in meta.get('modules', {}).keys()]}": ("Active Modules on Server: ['backup-gcs', 'generative-anthropic', "
+                                                                                     "'generative-anyscale', 'generative-aws', 'generative-cohere', "
+                                                                                     "'generative-databricks', 'generative-friendliai', 'generative-google', "
+                                                                                     "'generative-mistral', 'generative-nvidia', 'generative-octoai', "
+                                                                                     "'generative-ollama', 'generative-openai', 'generative-xai', "
+                                                                                     "'multi2vec-cohere', 'multi2vec-google', 'multi2vec-jinaai', "
+                                                                                     "'multi2vec-nvidia', 'multi2vec-voyageai', 'qna-openai', 'ref2vec-centroid', "
+                                                                                     "'reranker-cohere', 'reranker-jinaai', 'reranker-nvidia', "
+                                                                                     "'reranker-voyageai', 'text2colbert-jinaai', 'text2vec-aws', "
+                                                                                     "'text2vec-cohere', 'text2vec-databricks', 'text2vec-google', "
+                                                                                     "'text2vec-huggingface', 'text2vec-jinaai', 'text2vec-mistral', "
+                                                                                     "'text2vec-nvidia', 'text2vec-octoai', 'text2vec-ollama', 'text2vec-openai', "
+                                                                                     "'text2vec-voyageai', 'text2vec-weaviate']")
+ic| "MarkdownChunk collection already exists. Deleting and re-creating for a fresh start.": ('MarkdownChunk collection already exists. Deleting and re-creating for a '
+                                                                                             'fresh start.')
+/home/oem/Dokumente/_Python/100_Days/039/.venv/lib/python3.12/site-packages/weaviate/collections/classes/config.py:1963: PydanticDeprecatedSince211: Accessing the 'model_fields' attribute on the instance is deprecated. Instead, you should access this attribute from the model class. Deprecated in Pydantic V2.11 to be removed in V3.0.
+  for cls_field in self.model_fields:
+ic| 'MarkdownChunk collection created successfully.'
+ic| f"Loading documents from: {directory_path}": ('Loading documents from: '
+                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/MemoryBank_Reorganization_Summary.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_MemoryBank_Structure.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/01_CURRENT_STATUS.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_NEXT_ACTIONS.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/0202_TechContext.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/03_Glossary.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/02_TechStack.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/00_INDEX.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/0102_ProductContext.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/0203_MCP_References.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Core/01_ProjectBrief.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/01_Status/03_NextActions.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/01_Status/02_Progress.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/01_Status/01_ActiveContext.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0403_Database_Structure_RAG.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0401_Application_Reliability.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/03_Security.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0404_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0007_flight_finder_engine_rag.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/04_Backend/0402_API_Reference.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0106_Pending_Tasks.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/02_IMPLEMENTATION_GUIDE.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0107_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0206_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0004_MCP_References.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0000_FlightDealClub_MB_structure.txt')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0002_INDEX.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0104_Progress.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/01_CURRENT_STATUS.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0009_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0101_ProjectBrief.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0003_VERSION_HISTORY.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0103_ActiveContext.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/0001_GLOSSARY.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/00_CORE_PRINCIPLES.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/00_Archive/03_NEXT_ACTIONS.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/03_Deployment/MIGRATION_GUIDE.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/02_Development/0105_Existing_Assets.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/03_UI_Components/01_Client_Side_Localization.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/01_Integration/0008_FRONTEND_BACKEND_INTEGRATION.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/05_Implementation/01_Integration/0006_BACKEND_FRONTEND_INTEGRATION_PLAN.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0304_SPA_Implementation_Guide.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/01_Architecture.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0308_Subscription_Form_Implementation.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0307_Redirect_Implementation.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0302_Frontend_Implementation_Plan.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0306_Localization_Strategy.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0309_Vue_Integration_Strategy.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0310_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0305_Map_Interface.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0303_Flight_Search_Enhanced_Implementation.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0303_SPA_Web_Interface_Development_Plan.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/0301_Frontend_Architecture.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0501_Web_Page_Specification.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0504_UI_Issues.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0503_Applied_Design_Rules.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0505_README.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/03_Frontend/02_UI/0502_Mobile_Friendly_Design.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/0205_System_Architecture_Diagram.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/02_DatabaseSchema.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/01_SystemDesign.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/0201_SystemPatterns.md')
+ic| f"Loaded {len(docs_from_file)} document(s) from {filepath}": ('Loaded 1 document(s) from '
+                                                                  '/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/FDC_MemoryBank/02_Architecture/0204_UML_Diagram.md')
+ic| f"Finished loading. Total documents loaded: {len(documents)}": 'Finished loading. Total documents loaded: 64'
+ic| f"Chunking {len(documents)} documents...": 'Chunking 64 documents...'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 1/64: README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 2/64: MemoryBank_Reorganization_Summary.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 3/64: 00_MemoryBank_Structure.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 4/64: 01_CURRENT_STATUS.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 5/64: 03_NEXT_ACTIONS.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 6/64: 0202_TechContext.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 10 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 7/64: 03_Glossary.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 8/64: 02_TechStack.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 9/64: 00_INDEX.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 10/64: 0102_ProductContext.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 1 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 11/64: 0203_MCP_References.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 12/64: 01_ProjectBrief.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 13/64: 03_NextActions.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 7 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 14/64: 02_Progress.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 7 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 15/64: 01_ActiveContext.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 16/64: 0403_Database_Structure_RAG.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 23 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 17/64: 0401_Application_Reliability.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 7 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 18/64: 03_Security.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 14 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 19/64: 0404_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 20/64: 0007_flight_finder_engine_rag.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 66 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 21/64: 0402_API_Reference.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 12 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 22/64: 0106_Pending_Tasks.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 23/64: 02_IMPLEMENTATION_GUIDE.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 18 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 24/64: 0107_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 25/64: 0206_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 26/64: 0004_MCP_References.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 9 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 27/64: 0000_FlightDealClub_MB_structure.txt'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 28/64: 0002_INDEX.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 29/64: 0104_Progress.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 37 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 30/64: 01_CURRENT_STATUS.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 31/64: 0009_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 32/64: 0101_ProjectBrief.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 3 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 33/64: 0003_VERSION_HISTORY.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 14 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 34/64: 0103_ActiveContext.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 33 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 35/64: 0001_GLOSSARY.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 36/64: 00_CORE_PRINCIPLES.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 8 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 37/64: 03_NEXT_ACTIONS.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 9 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 38/64: MIGRATION_GUIDE.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 7 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 39/64: 0105_Existing_Assets.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 3 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 40/64: 01_Client_Side_Localization.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 41/64: 0008_FRONTEND_BACKEND_INTEGRATION.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 8 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 42/64: 0006_BACKEND_FRONTEND_INTEGRATION_PLAN.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 12 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 43/64: 0304_SPA_Implementation_Guide.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 16 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 44/64: 01_Architecture.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 45/64: 0308_Subscription_Form_Implementation.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 5 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 46/64: 0307_Redirect_Implementation.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 47/64: 0302_Frontend_Implementation_Plan.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 10 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 48/64: 0306_Localization_Strategy.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 49/64: 0309_Vue_Integration_Strategy.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 50/64: 0310_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 51/64: 0305_Map_Interface.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 8 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 52/64: 0303_Flight_Search_Enhanced_Implementation.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 25 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 53/64: 0303_SPA_Web_Interface_Development_Plan.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 54/64: 0301_Frontend_Architecture.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 8 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 55/64: 0501_Web_Page_Specification.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 56/64: 0504_UI_Issues.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 11 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 57/64: 0503_Applied_Design_Rules.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 4 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 58/64: 0505_README.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 2 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 59/64: 0502_Mobile_Friendly_Design.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 3 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 60/64: 0205_System_Architecture_Diagram.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 16 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 61/64: 02_DatabaseSchema.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 14 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 62/64: 01_SystemDesign.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 10 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 63/64: 0201_SystemPatterns.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 12 chunks.'
+ic| f"Processing document {i+1}/{len(documents)}: {doc.metadata.get('filename', 'Unknown File')}": 'Processing document 64/64: 0204_UML_Diagram.md'
+ic| f"Split into {len(split_docs)} chunks.": 'Split into 6 chunks.'
+ic| f"Finished chunking. Total chunks created: {len(chunks)}": 'Finished chunking. Total chunks created: 627'
+ic| f"Ingesting {len(chunks)} chunks into Weaviate...": 'Ingesting 627 chunks into Weaviate...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 10 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 20 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 30 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 40 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 50 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 60 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 70 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 80 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 90 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 100 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 110 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 120 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 130 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 140 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 150 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 160 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 170 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 180 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 190 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 200 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 210 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 220 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 230 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 240 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 250 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 260 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 270 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 280 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 290 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 300 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 310 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 320 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 330 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 340 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 350 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 360 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 370 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 380 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 390 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 400 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 410 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 420 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 430 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 440 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 450 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 460 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 470 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 480 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 490 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 500 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 510 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 520 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 530 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 540 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 550 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 560 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 570 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 580 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 590 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 600 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 610 chunks to batch...'
+ic| f"Added {i + 1} chunks to batch...": 'Added 620 chunks to batch...'
+{'message': 'Failed to send all objects in a batch of 48', 'error': "WeaviateInsertManyAllFailedError('Every object failed during insertion. Here is the set of all errors: connection to: OpenAI API failed with status: 429 request-id: req_e66bd9b24d5de480aabc3d046a4635d6 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_1f93ff6e543e3f4b936bf81d2a30adfe error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_d4da1f0a2bc17527af44fa133ba0aed2 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_f246b753103ea70ef0f19a1f81b4c431 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_44e971bd443fa5d57e591bbf4f24064a error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_f97f8465d7c730b5af4f8fa419054b00 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_0be10d698edd628979f3378ff3f9236f error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_00425957008178e7e205bf9e0bec10ad error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_eff057d0ad336dbb7248d89a945de2f9 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_9dc4e702fedd418af57cfcb3272e024f error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_22c0c8af8e0e96f00c5f3057f9a66f21 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_53807a9e12348e037f84b72a9585fc82 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_ed5ffd846942ebdbe8af74c5413bfa9d error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_ace2cbf83c1a9dcaaf69b211d352e8f1 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_77dabd12054afb13c518cf61deeaa5fa error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_992d7edc914911697d1c1fd812a9ad93 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_e127cfe43ca352f7236555796da8cbf2 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_a15c350efad92802a6bebfb0cd4ef887 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_99fec31c16a77e357a823b4b775872df error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_ca4c1f9c3f8c5c8277a2a4a11a8a0fbd error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_25fa0109a8cbf8dad917dc1292a784d3 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_210846bea14bdc660011ada6ddb4a6d7 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_ba838568d8a54a7638d56f54a3040ab4 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_4ab4362b0f2bc8a0d281aacb51a013df error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_59f927079bf757ca9307815dbce621b5 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_2bac9ae23b9a19a80ca2200a7cf39d46 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_af6f413d8c612dd6e2c1654665e3d017 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_b53a23d4d8fbd331d30b6080a415d369 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_0c0392139b2c99d7a6b6cda0b2c8db14 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_d3ccb579a794b39cfc34d89154d47275 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_aa2dc38609e9aef3fcd5d5a8eba1912b error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_3e53f91700609fadf5036d76c4d237a8 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_c8bd18e41cc790a6034b44b66fe3b8c7 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_cd1d7474726f41549c3ed85b78c7c3ae error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_02d63fcf142de2cfa893975783a987d3 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_9b1ed98d2dca6db65865a4520119fce4 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_612ec8b78caea444aaf790c597f7e042 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_c536abdfd7a49fd9e685b481e228bb20 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_333e637e55c15ca0e767e464bf787137 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_15e8995ffb47e3451a6037478e4eb609 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_61bd0f098faa3ab71a90539700747f5a error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_e963172fac72b0588a13fb2438df8410 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_25d7227810200d27733bd006686251ee error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_2d280581610dd48cd71ad454c11305e8 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_30a9630d09166708ee564938949e2eec error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_99e82382fd3a646928e4f85a807154ff error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_798aaa9fe39a8dbb04fdff4356ef9b72 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_ef413bdeb950596f8f4fda7990d54bd0 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.')"}
+{'message': 'Failed to send 48 objects in a batch of 48. Please inspect client.batch.failed_objects or collection.batch.failed_objects for the failed objects.'}
+{'message': 'Failed to send all objects in a batch of 48', 'error': "WeaviateInsertManyAllFailedError('Every object failed during insertion. Here is the set of all errors: connection to: OpenAI API failed with status: 429 request-id: req_84809272459b2659325b3e5684abb93a error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_e9594e99fc5c40b080de511eba9344ff error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_c945422ea37d8062df2ccd5141a7694c error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_f025a6b47bed41e155560906f840f29d error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_9c138b9eaef35cb2997f36311ea3f30e error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_6750a6181139a65f6f6a5a9ce48b8580 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_bee6cfb4f0659c5af5ea80f4caa5f6e2 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_f1c1884ef7a159d912932bd0a9835cbf error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_e32c89fe23f8e8914c466e347e990629 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_dd4b1434a7001c6895ec77a50d273312 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_c3661d6288c1ae25a5c517917b551289 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_be2f67eaf85516af5e4af2058cca6f68 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_4495cab82e50caa723fb99c12d5839cd error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_294ec4227e00d54f004de7623b8ed953 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_26f76edcb7fcf305e3cec7a54b1c74b8 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_dda02cb5e63d2d123f7e5b08116a323e error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_c8d675ecd878798b3d9f9536f373097b error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_76f0637af6f8063f49fee925277085c0 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_17c2a78ab436eab1dcdbe74b057294ee error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_4d4b70452c9d28c4f212f39b0c5b2efd error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_c4070faa11e7fc5061a456b2aadd4a11 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_4e572307d21628d5d7ae2d432bd619ce error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_3430db6a8b4878a3511b72ba30596257 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_14bd54498f43576796b84f9f67bf2745 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_f74851041e527103a0e2d0464443eb07 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_c18a879dfe29a8aab81ab70fba6269d3 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_50579990cbfaeae8d80ae5a73bfc61dd error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_b17de9873f6ae87abab7aeea80a1b620 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_04dbb93560bf8db56957b0e7487cbe58 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_f357b985924db6f9413da33432e93802 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_8847385997ba50fe0cd45ae265bc2435 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_4dd04ed632ab9fb00419ef8508c2c6c1 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_fa695547796feddd3938a395158b631a error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_367e48c304d70df6fced50f27bf5087a error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_4d699794aa93a379f34fefb959547183 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_17f7c39572347bda19cc7a1c63889b44 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_7a61df06bb5ffcbe6b6a58184e188f23 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_cafcb8bd6675d617ed0f259f8a5c8121 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_a78a0cd89575fbd42d740f4d8ab4b34d error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_c3c20e1e9d8e3300a3c350075b9843a7 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_d6c114f80deb0d8c1fd948d18efc00de error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_b554a60c598301ce70e9d9a9ddf0342c error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_e3946aa5f32d34eb7fb429e6a05b4498 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_43b63b22b13c0951f234b8c9cc179380 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_d7652c7f1fcb3fe1d37c852cc4cf5c90 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_7289151ee3899943eb77d160c004262e error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_15b04b44c291ddd7b3f24d7c0b7b03f6 error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\\nconnection to: OpenAI API failed with status: 429 request-id: req_590f315e4e02163b863a2add64a9a09b error: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.')"}
+{'message': 'Failed to send 48 objects in a batch of 48. Please inspect client.batch.failed_objects or collection.batch.failed_objects for the failed objects.'}
+^Cic| 'Connection closed in finally block.'
+Traceback (most recent call last):
+  File "/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate/weaviate-client.py", line 187, in <module>
+{'message': 'Failed to send all objects in a batch of 531', 'error': "WeaviateBatchError('Query call with protocol GRPC batch failed with message Channel closed!.')"}
+{'message': 'Failed to send 531 objects in a batch of 531. Please inspect client.batch.failed_objects or collection.batch.failed_objects for the failed objects.'}
+    ingest_chunks(client, chunked_documents)
+  File "/home/oem/Dokumente/_Python/100_Days/040/FlightDealClub/Weaviate/weaviate-client.py", line 106, in ingest_chunks
+    with markdown_collection.batch.dynamic() as batch:
+  File "/home/oem/Dokumente/_Python/100_Days/039/.venv/lib/python3.12/site-packages/weaviate/collections/batch/batch_wrapper.py", line 131, in __exit__
+    self.__current_batch._shutdown()
+  File "/home/oem/Dokumente/_Python/100_Days/039/.venv/lib/python3.12/site-packages/weaviate/collections/batch/base.py", line 253, in _shutdown
+    self.flush()
+  File "/home/oem/Dokumente/_Python/100_Days/039/.venv/lib/python3.12/site-packages/weaviate/collections/batch/base.py", line 662, in flush
+    time.sleep(0.01)
+KeyboardInterrupt
