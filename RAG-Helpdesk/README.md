@@ -1,4 +1,4 @@
-# FDC Memory Bank
+# RAG-Helpdesk (old FDC Memory Bank)
 
 A versatile memory storage and retrieval system using Weaviate for embedding, storing, and querying various types of content including text, images, URLs, and binary files.
 
